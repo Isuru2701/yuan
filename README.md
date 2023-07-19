@@ -6,6 +6,6 @@ the process flow would go like this:
 
 ```mermaid
 graph TD
-A[Human Voice] --|Speech-to-Text model|> B[text]
-B --||> C[GPT-2] --|Text-to-Speech model|> D[Speaker]
+A[Human voice via mic] --speech-to-text model--> B[GPT-2]
+B --text-to-speech model--> C[speaker]
 ```
